@@ -1,10 +1,20 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="w-96 mx-auto p-20">
+      <h1 className="text-xl font-bold">Todo</h1>
+      <div>
+        <input type="text" className="border border-black" />
+        <button className="border border-black">ボタン</button>
+      </div>
+      <ul>
+        <li>TODO1</li>
+        <li>TODO2</li>
+        <li>TODO3</li>
+      </ul>
+    </div>
+  );
 };
 
 export default Home;
